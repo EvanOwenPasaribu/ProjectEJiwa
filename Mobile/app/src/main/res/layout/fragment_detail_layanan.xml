@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvJudulLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Judul Detail"
+        />
+    <ImageView
+        android:id="@+id/imgLayanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:src="@drawable/asuransi"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvDetailLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginBottom="10sp"
+        android:text="Detail"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Hubungi    : " />
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/telepon"
+            android:onClick="dial"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:text="Nomor"
+            />
+    </LinearLayout>
+</LinearLayout>
