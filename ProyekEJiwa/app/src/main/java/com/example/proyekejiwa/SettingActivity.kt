@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.proyekejiwa.R
+import com.example.proyekejiwa.asynctaskloader.PasienActivity
 import com.example.proyekejiwa.notification.SettingNotificationActivity
 import kotlinx.android.synthetic.main.activity_setting.*
 
@@ -16,11 +17,14 @@ class SettingActivity : AppCompatActivity(), View.OnClickListener {
 
         tvSettingNotif.setOnClickListener(this)
         tvPengggunaanApp.setOnClickListener(this)
+        tvDataPasien.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         if(v.id == R.id.tvSettingNotif) {
             startActivity(Intent(this, SettingNotificationActivity::class.java))
+        }else if(v.id == R.id.tvDataPasien) {
+            startActivity(Intent(this, PasienActivity::class.java))
         }
     }
 }

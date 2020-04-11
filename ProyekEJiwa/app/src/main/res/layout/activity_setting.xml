@@ -38,6 +38,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
         android:layout_height="wrap_content"
         android:weightSum="5">
         <ImageView
@@ -49,6 +50,34 @@
         <TextView
             android:id="@+id/tvSettingNotif"
             android:text="Setting Notifikasi"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+        <ImageView
+            android:src="@drawable/ic_keyboard_arrow_right"
+            android:layout_width="0dp"
+            android:layout_gravity="right"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+        <ImageView
+            android:src="@drawable/ic_view_list_pasien"
+            android:layout_width="0dp"
+            android:layout_gravity="start"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tvDataPasien"
+            android:text="Data Pasien"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_width="0dp"

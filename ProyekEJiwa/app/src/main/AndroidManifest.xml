@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
@@ -15,8 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SettingActivity" android:parentActivityName=".MainActivity" android:label="Setting"/>
-        <activity android:name=".notification.SettingNotificationActivity" android:parentActivityName=".SettingActivity" android:label="Setting Notification"/>
+        <activity android:name=".asynctaskloader.PasienActivity" android:label="Data Pasien" android:parentActivityName=".SettingActivity"></activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="Setting"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".notification.SettingNotificationActivity"
+            android:label="Setting Notification"
+            android:parentActivityName=".SettingActivity" />
 
         <service
             android:name=".broadcastnservice.TryConnectService"
@@ -33,7 +39,7 @@
         <receiver
             android:name=".notification.AlarmReceiver"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
